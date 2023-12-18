@@ -21,16 +21,19 @@ To run the app:
 
 ```bash
 cd your_project_root/
+```
 
 2. Activate the Python virtual environment:
 
 ```bash
 source backend/venv/bin/activate
+```
 
 3. Run the Flask application:
 
 ```bash
 python backend/server_api.py
+```
 
 ## Development
 
@@ -38,6 +41,7 @@ During development, you can use the following command (if you are on Linux) to r
 
 ```bash
 ./build_reload.sh
+```
 
 This will automate the process of rebuilding the React app and running the Flask server.
 
