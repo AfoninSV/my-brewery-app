@@ -12,6 +12,7 @@ cd frontend/
 
 # Run the build command
 npm run build
+```
 
 ## Running the App
 
