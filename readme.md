@@ -6,8 +6,8 @@ This project integrates a Flask server that serves React app files.
 
 Before running the app, you need to build the React app. If you're on Linux, you can use the following commands:
 
-cd frontend/
-npm run build
+- cd frontend/
+- npm run build
 
 ## Running the App
 
