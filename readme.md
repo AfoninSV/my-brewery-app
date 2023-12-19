@@ -24,13 +24,20 @@ To run the app:
 cd your_project_root/
 ```
 
-2. Activate the Python virtual environment:
+2. Create and activate the Python virtual environment:
 
 ```bash
+python3 -m venv backend/venv
 source backend/venv/bin/activate
 ```
 
-3. Run the Flask application:
+3. Install backend dependencies:
+
+```bash
+pip install -r backend/requirements.txt
+```
+
+4. Run the Flask application:
 
 ```bash
 python backend/server_api.py
