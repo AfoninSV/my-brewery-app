@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import Input from './components/input'
+import Scanner from './components/scanner';
 
 function App() {
 
@@ -14,21 +14,22 @@ function App() {
   // or
   const [data, setData] = useState({});
   console.log(data);
-  useEffect(() => {
-    axios('/api').then((res) => {
-      setData(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios('/api').then((res) => {
+  //     setData(res.data);
+  //   });
+  // }, []);
   console.log(data);
   
   // *reminder
   // const dataList = Object.entries(data).map(([key, value]) => <p>{`${key}: ${value}`}</p>);
 
+
+
   return (
     <>
+      <Scanner/>
       Hello React World!
-      {/* {dataList} */}
-      <Input />
     </>  
   );
 }
