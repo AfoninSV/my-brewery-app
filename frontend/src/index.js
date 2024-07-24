@@ -1,12 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import Gravity from './components/Gravity';
+import Scans from './components/Scans';
+import Invoices from './components/Invoices';
+import MBW from './components/Mbw';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {path: "/",
+  element: <App/>},
+
+  {path: "/scanner",
+  element: <Scans />},
+
+  {path: "/gravity",
+  element: <Gravity/>},
+
+  {path: "/invoices/today",
+  element: <Invoices />},
+
+  {path: "/invoices/tomorrow",
+  element: <Invoices tomorrow={true}/>},
+
+  {path: "/mbw",
+  element: <MBW />}
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -4,13 +4,25 @@
 frontend/node_modules/
 backend/venv/
 backend/__pycache__/
+backend/static/
 /.pnp
 .pnp.js
 
 # production
+
 frontend/build/
+database.sqlite
 
 # misc
+backend/chrome-linux64/
+backend/chromedriver
+
+cont_build.sh
+Dockerfile
+noter
+serverlog.log
+versions.log
+
 .DS_Store
 .env.local
 .env.development.local
